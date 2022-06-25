@@ -19,6 +19,9 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+/* Reponsive */
+
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -31,8 +34,26 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+/* Test */
+.grid__column-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+.grid__column-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
 
 }
+.grid__column{
+    
+
+}
+
 /* Animation */
 @keyframes fadeIn{
     from{
@@ -93,7 +114,7 @@ html{
     outline: none;
     cursor: pointer;
     color: var(--tex-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 1.6rem;
@@ -115,4 +136,62 @@ html{
     height: 32px;
     padding: 0 8px;
     font-size: 12px;
+}
+/* Selection */
+
+
+
+.select-input__label{
+    font-size: 1.1rem;
+   
+}
+.select-input__icon{
+    font-size: 1.1rem;
+    color: rgba(131, 131, 131);
+    position: relative;
+    top: 1px;
+    
+}
+
+.select-input{
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.select-input__link{
+    text-decoration: none;
+    color: var(--tex-color);
+    font-size: 1.1rem;
+    padding : 4px 0;
+    display: block;
+   
+
+}
+
+.select-input__link:hover{
+    color: var(--primary-color);
+}
+
+.select-input__list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 22px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    padding: 8px 16px;
+    display: none;
+}
+
+.select-input:hover .select-input__list{
+
+    display: block;
 }
