@@ -1,5 +1,6 @@
 :root{
     --primary-color : #ed4c2c;
+    --star-gold-color : #ffce3e;
     /* --primary-color-rgba : rgb(254, 98, 50); */
     --white-color: #fff;
     --black-color: #000;
@@ -195,6 +196,7 @@ html{
     list-style: none;
     padding: 8px 16px;
     display: none;
+    z-index: 1;
 }
 
 .select-input:hover .select-input__list{
