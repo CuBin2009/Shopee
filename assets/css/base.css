@@ -203,3 +203,49 @@ html{
 
     display: block;
 }
+
+/* Pagination */
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+}
+
+
+.pagination-item{
+    margin: 0 18px;
+
+}
+
+.pagination-item-icon{
+    cursor: pointer;
+    
+}
+
+.pagination-item__link{
+    color: #939393;
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: 300;
+    cursor: default;
+}
+.pagination-item--active.pagination-item__link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.pagination-item--active{
+    cursor: pointer;
+}
+
+.pagination-item--active.pagination-item__link:hover{
+    
+   background-color: #f05d40;
+}
